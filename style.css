@@ -19,6 +19,11 @@ body {
 
 button, .logo {
     cursor: pointer;
+    transition: 400ms;
+}
+
+button:hover:not(#btn-copiar), .logo:hover {
+    opacity: 0.4;
 }
 
 textarea {
@@ -90,6 +95,7 @@ section {
 #btn-descriptografar {
     background: #D8DFE8;
     color: #0A3871;
+    font-weight: bold;
     border: 1px solid #0A3871;
     margin-left: 1.25%;
 }
@@ -121,11 +127,13 @@ section {
 #btn-copiar {
     width: 100%;
     padding: 1.5em;
+    background: #0A3871;
     border-radius: 0 0 1.8em 1.8em;
     border: none;
     text-align: center;
     position: relative;
     top: -7%;
+    color: white;
 }
 
 @media screen and (max-width: 560px) {
