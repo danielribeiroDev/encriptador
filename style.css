@@ -1,0 +1,163 @@
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    width: 90vw;
+    margin: 0 auto;
+    background: #E9ECF8;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around
+}
+
+.logo {
+    width: 2em;
+}
+
+button, .logo {
+    cursor: pointer;
+}
+
+textarea {
+    resize: none;
+}
+
+section {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.entradaDados {
+    padding: 2em 0 0 0;
+    width: 66%;
+}
+
+.entradaDados .form {
+    margin: 0 1.5em 0 10%;
+}
+
+.entradaDados textarea {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border: none;
+    color: #0A3871;
+    font-size: 2em;
+    padding: 1em 1em 0 1em;
+    background: transparent;
+}
+
+.entradaDados textarea::placeholder {
+    color: #0A3871;
+}
+
+.entradaDados textarea:focus {
+    outline: 0;
+}
+
+.entradaDados p {
+    margin-left: 2em;
+    padding: 1em 0;
+    color: #495057;
+}
+
+.entradaDados p:before{
+    content: "\26A0  ";
+    color: black;
+}
+
+.caixa {
+    text-align: center;
+}
+
+.entradaDados button {
+    width: 45%;
+    padding: 1.5em;
+    border-radius: 1.8em;
+    border: none;
+    text-align: center;
+}
+
+#btn-criptografar {
+    background: #0A3871;
+    color: white;
+    margin-right: 1.25%;
+}
+
+#btn-descriptografar {
+    background: #D8DFE8;
+    color: #0A3871;
+    border: 1px solid #0A3871;
+    margin-left: 1.25%;
+}
+
+.saidaDados {
+    padding: 1.5em 0 0 0;
+    width: 25%;
+}
+
+.saidaDados .form {
+    height: 97%;
+}
+
+.saidaDados textarea {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 1.5em;
+    border: none;
+    border-radius: 2em;
+    font-size: 1.5em;
+    box-shadow: 5px 5px 10px lightgray;
+}
+
+.saidaDados textarea:focus {
+    outline: 0;
+}
+
+#btn-copiar {
+    width: 100%;
+    padding: 1.5em;
+    border-radius: 0 0 1.8em 1.8em;
+    border: none;
+    text-align: center;
+    position: relative;
+    top: -7%;
+}
+
+@media screen and (max-width: 560px) {
+    .logo {
+        width: 1.5em;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .entradaDados {
+        width: 100%;
+    }
+    
+    .entradaDados .form {
+        margin: 0;
+    }
+
+    .saidaDados {
+        width: 100%;
+        padding: 1.5em 0;
+    }
+
+    .entradaDados button {
+        display: block;
+        width: 100%;
+        margin: 4% 0;
+    }
+
+    #btn-descriptografar {
+        margin-left: 0;
+    }
+
+}
